@@ -7,6 +7,12 @@
     <style>
         .image img{
             width: 100%;
+            pointer-events: none;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            user-select: none;
+            -moz-touch-collout: none;
+            -moz-user-select: none;
         }
         h1{
             white-space: nowrap;
@@ -22,7 +28,7 @@
     <h3>▼　極めた方はこちら　▼</h3>
     <audio controls src="level3.mp3" type="audio/mp3">プレイ用ミュージック３</audio>
     <div class="image">
-        <img src=".\explain.jpeg" alt="シマエナガ説明書">
+        <img src=".\explain.jpeg" alt="シマエナガ説明書" onselectstart="return false;" onmousedown="return false;">
     </div>
 </body>
 </html>
