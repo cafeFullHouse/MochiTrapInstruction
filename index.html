@@ -77,7 +77,7 @@
         audios.forEach(audio =>{
             audio.addEventListener('play', () => {
                 audios.forEach(otherAudio => {
-                    if (otherAudio != currentAudio && !otherAudio.paused) {
+                    if (otherAudio != audio && !otherAudio.paused) {
                         otherAudio.pause();
                         otherAudio.currentTime = 0;
                     }
@@ -85,7 +85,7 @@
             });
 
             audio.addEventListener("pause", () =>{
-                if(audio.currentTime >0 && !audio.ended)
+                if(audio.currentTime > 0 && !audio.ended)
                 {
                     audio.currentTime = 0;
                 }
