@@ -5,9 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>○番目にピュアな私</title>
     <style>
+        html{
+            scroll-behavior: smooth;
+        }
+
         body {
             margin: 0;
             padding: 0;
+            padding-top: 20px;
         }
 
         .image img{
@@ -22,6 +27,7 @@
         
         h1{
             white-space: nowrap;
+            scroll-margin-top: 10px;
         }
 
         audio {
@@ -47,12 +53,24 @@
             font-size: 1.2em;
         }
 
+        .jump_eng{
+            font-weight: bold;
+            font-size: 1.2em;
+            text-decoration: none;
+            background: #ec84a7;
+            color: white;
+            margin: 0px 10px;
+            padding: 7px 15px;
+            border-radius: 20px;
+        }
     </style>
 </head>
 <body>
+    <a class="jump_eng" href="#instruction_eng">▶ English version here</a>
+
     <h1>【プレイ用ミュージック】</h1>
 
-    <div class="audio-block">
+    <div  class="audio-block">
         <h3>▼🐣初プレイ時はこちら🐣▼</h3>
         <audio controls src="level1.mp3" type="audio/mp3">プレイ用ミュージック１</audio>
     </div>
@@ -68,7 +86,28 @@
     </div>
 
     <div class="image">
-        <img src="explain.jpeg" alt="シマエナガ説明書" onselectstart="return false;" onmousedown="return false;">
+        <img src="instruction.jpeg" alt="シマエナガ説明書" onselectstart="return false;" onmousedown="return false;">
+    </div>
+
+    <h1 id="instruction_eng">【GAME MUSIC】</h1>
+
+    <div  class="audio-block">
+        <h3>▼ easy ▼</h3>
+        <audio controls src="level1.mp3" type="audio/mp3">プレイ用ミュージック１</audio>
+    </div>
+
+    <div class="audio-block">
+        <h3>▼ normal ▼</h3>
+        <audio controls src="level2.mp3" type="audio/mp3">プレイ用ミュージック２</audio>
+    </div>
+
+    <div class="audio-block">
+        <h3>▼ crazy ▼</h3>
+        <audio controls src="level3.mp3" type="audio/mp3">プレイ用ミュージック３</audio>
+    </div>
+
+    <div class="image">
+        <img src="instruction_eng.jpg" alt="simaenaga setumeisyo" onselectstart="return false;" onmousedown="return false;">
     </div>
 
     <script>
