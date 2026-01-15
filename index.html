@@ -30,11 +30,22 @@
             scroll-margin-top: 10px;
         }
 
-        audio {
+        .audio-wrapper {
+            overflow: hidden;
             width: 100%;
-            max-width: 500px; 
+            max-width: 100%;
+            display: flex;
+            justify-content: center; 
+        }
+
+
+        audio {
+            width: 66.6666%;
+            max-width: none; 
             margin: 10px 0;
             display: block;
+            transform: scale(1.5);
+            transform-origin: center;
         }
 
         .audio-block {
@@ -72,17 +83,23 @@
 
     <div  class="audio-block">
         <h3>▼🐣初プレイ時はこちら🐣▼</h3>
-        <audio controls src="level1.mp3" type="audio/mp3">プレイ用ミュージック１</audio>
+        <div class="audio-wrapper">
+            <audio controls src="level1.mp3" type="audio/mp3">プレイ用ミュージック１</audio>
+        </div>
     </div>
 
     <div class="audio-block">
         <h3>▼　慣れてきたらこちら　▼</h3>
-        <audio controls src="level2.mp3" type="audio/mp3">プレイ用ミュージック２</audio>
+        <div class="audio-wrapper">
+            <audio controls src="level2.mp3" type="audio/mp3">プレイ用ミュージック２</audio>
+        </div>
     </div>
 
     <div class="audio-block">
         <h3>▼　極めた方はこちら　▼</h3>
-        <audio controls src="level3.mp3" type="audio/mp3">プレイ用ミュージック３</audio>
+        <div class="audio-wrapper">
+            <audio controls src="level3.mp3" type="audio/mp3">プレイ用ミュージック３</audio>
+        </div>
     </div>
 
     <div class="image">
@@ -93,17 +110,23 @@
 
     <div  class="audio-block">
         <h3>▼ easy ▼</h3>
-        <audio controls src="level1.mp3" type="audio/mp3">プレイ用ミュージック１</audio>
+        <div class="audio-wrapper">
+            <audio controls src="level1.mp3" type="audio/mp3">プレイ用ミュージック１</audio>
+        </div>
     </div>
 
     <div class="audio-block">
         <h3>▼ normal ▼</h3>
-        <audio controls src="level2.mp3" type="audio/mp3">プレイ用ミュージック２</audio>
+        <div class="audio-wrapper">
+            <audio controls src="level2.mp3" type="audio/mp3">プレイ用ミュージック２</audio>
+        </div>
     </div>
 
     <div class="audio-block">
         <h3>▼ crazy ▼</h3>
-        <audio controls src="level3.mp3" type="audio/mp3">プレイ用ミュージック３</audio>
+        <div class="audio-wrapper">
+            <audio controls src="level3.mp3" type="audio/mp3">プレイ用ミュージック３</audio>
+        </div>
     </div>
 
     <div class="image">
